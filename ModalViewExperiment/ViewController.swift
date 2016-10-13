@@ -20,6 +20,13 @@ class ViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
-
+	@IBAction func experiment(_ sender: AnyObject) {
+		let nextController = UIAlertController()
+		let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default) { action in
+			self.dismiss(animated: true, completion: nil)
+		}
+		nextController.addAction(okAction)
+		present(nextController, animated: true, completion: nil)
+	}
 }
 
